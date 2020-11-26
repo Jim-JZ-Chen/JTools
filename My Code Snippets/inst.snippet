@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+      <Title>inst</Title>
+      <Author>[USERNAME]</Author>
+      <Description>
+      </Description>
+      <HelpUrl>
+      </HelpUrl>
+      <Shortcut>inst</Shortcut>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal Editable="true">
+          <ID>QuickPlayManager</ID>
+          <ToolTip>QuickPlayManager</ToolTip>
+          <Default>QuickPlayManager</Default>
+          <Function>ClassName();</Function>
+        </Literal>
+      </Declarations>
+      <Code Language="csharp" Delimiter="$"><![CDATA[    public static $QuickPlayManager$ inst;
+
+    private void Awake()
+    {
+        inst = this;
+    }]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>
